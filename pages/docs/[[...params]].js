@@ -9,11 +9,12 @@ const Doc = () => {
   if (params.length === 2) {
     return (
       <h1>
-        Viewing docs for features {params[0]} and concepts {params[1]}
+        Viewing docs for features {params[0]} and {params[1]}
       </h1>
     );
   } else if (params.length === 1) {
-    return <h1>Viewing docs for features {params[0]}</h1>;
+    
+    return <h1>Viewing docs for {params[0]}</h1>;
   }
   return (
     <div>
